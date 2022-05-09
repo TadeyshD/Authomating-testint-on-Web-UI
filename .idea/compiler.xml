@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Maven_Course_3" />
+        <module name="Authomating-testint-on-Web-UI" />
       </profile>
     </annotationProcessing>
   </component>
