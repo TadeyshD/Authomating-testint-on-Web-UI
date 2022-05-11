@@ -1,15 +1,16 @@
 package hw_3;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.checkerframework.framework.qual.TargetLocations;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import java.lang.annotation.Target;
 import java.util.concurrent.TimeUnit;
 
-public class test_1 {
+public class test_2 {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
@@ -21,7 +22,6 @@ public class test_1 {
         action.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS); //Неявные ожиданияНеявные ожидания конфигурируют экземпляр драйвера периодически проверять наличие искомогоэлемента в течение обозначенного времени без выброса исключений. Прописывается в начале.
         action.get("https://google.com");
         action.navigate().to("http://testlink.testbase.ru/login.php");
-
         WebElement webElement1 = action.findElement(By.xpath(".//*[@id=\"tl_login\"]"));
         webElement1.click();
         try {
@@ -39,9 +39,16 @@ public class test_1 {
         WebElement webElement3 = action.findElement(By.xpath(".//*[@id=\"tl_login_button\"]"));
         webElement3.click();
         action.switchTo().frame(0);
-        WebElement webElement4 = action.findElement(By.xpath(".//*[@accesskey=\"q\"]"));
+        WebElement webElement4 = action.findElement(By.xpath(".//*[@accesskey=\"i\"]"));
         webElement4.click();
+        action.switchTo().parentFrame();
+        action.switchTo().frame(1);
+        WebElement webElement5 = action.findElement(By.cssSelector("form:nth-child(1) > .groupBtn > input"));
+        webElement5.click();
+        action.switchTo().parentFrame();
+        action.switchTo().frame(0);
+        WebElement webElement6 = action.findElement(By.xpath(".//*[@accesskey=\"q\"]"));
+        webElement6.click();
         action.quit();
-
     }
 }
