@@ -21,21 +21,12 @@ public class test_1 {
         action.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS); //Неявные ожиданияНеявные ожидания конфигурируют экземпляр драйвера периодически проверять наличие искомогоэлемента в течение обозначенного времени без выброса исключений. Прописывается в начале.
         action.get("https://google.com");
         action.navigate().to("http://testlink.testbase.ru/login.php");
-
         WebElement webElement1 = action.findElement(By.xpath(".//*[@id=\"tl_login\"]"));
         webElement1.click();
-        try {
-            webElement1.sendKeys("Test_Dude");
-        } catch (StaleElementReferenceException e){
-            System.out.println(e.getSupportUrl());
-        }
+        webElement1.sendKeys("Test_Dude");
         WebElement webElement2 = action.findElement(By.xpath(".//*[@id=\"tl_password\"]"));
         webElement2.click();
-        try {
-            webElement2.sendKeys("ARRB6XGri4us7j!");
-        } catch (StaleElementReferenceException e){
-            System.out.println(e.getSupportUrl());
-        }
+        webElement2.sendKeys("ARRB6XGri4us7j!");
         WebElement webElement3 = action.findElement(By.xpath(".//*[@id=\"tl_login_button\"]"));
         webElement3.click();
         action.switchTo().frame(0);
