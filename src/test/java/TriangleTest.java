@@ -8,16 +8,20 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class TriangleTest {
         @Test
-        void test() throws MyException {
+        void test_1() throws MyException {
             TaskClass taskClass = new TaskClass();
             Assertions.assertEquals( 290.4737509655563, taskClass.training(20,30,40));
             Assertions.assertThrows(MyException.class,() -> taskClass.training(7, -5, 9));
+            Assertions.assertThrows(MyException.class,() -> taskClass.training(7, 0, 9));
+            Assertions.assertThrows(MyException.class,() -> taskClass.training(7, 3, 2));
+
         }
-    @ParameterizedTest
-    @CsvSource({"20, 30, 40, 45, " })
-    void testWithSource (double a, double b, double c, double p, double result) throws MyException{
-            TaskClass taskClass = new TaskClass();
-            Assertions.assertEquals(result, taskClass.training(a, b, c));
-        }
+//    @ParameterizedTest
+//    @CsvSource({"30, 15, 20, 133.31705629813464"})
+//    void testWithSource (double a, double b, double c, double result) throws MyException{
+//           TaskClass taskClass2 = new TaskClass();
+//            Assertions.assertEquals(result, taskClass2.training(a, b, c));
+//        }
+
                 }
 
