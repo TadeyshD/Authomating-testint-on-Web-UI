@@ -1,3 +1,5 @@
+package org.example;
+
 import hw_4.MyException;
 import hw_4.TaskClass;
 import org.junit.jupiter.api.Assertions;
