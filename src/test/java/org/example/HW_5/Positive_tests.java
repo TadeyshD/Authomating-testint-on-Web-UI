@@ -23,9 +23,9 @@ public class Positive_tests extends Setting {
         getDriver().switchTo().parentFrame().switchTo().frame(1).switchTo().frame(0);
         WebElement webElement2 = getDriver().findElement(By.cssSelector(".x-tree-ec-icon"));
         webElement2.click();
-        WebElement webElement3 = getDriver().findElement(By.cssSelector("#extdd-10 > .x-tree-ec-icon"));
+        WebElement webElement3 = getDriver().findElement(By.cssSelector("#extdd-13 > img.x-tree-ec-icon.x-tree-elbow-plus"));
         webElement3.click();
-        WebElement webElement4 = getDriver().findElement(By.cssSelector("#extdd-864"));
+        WebElement webElement4 = getDriver().findElement(By.id("extdd-945"));
         webElement4.click();
         getDriver().switchTo().parentFrame().switchTo().frame(1);
         WebElement webElement5 = getDriver().findElement(By.xpath(".//div[4]/input"));
