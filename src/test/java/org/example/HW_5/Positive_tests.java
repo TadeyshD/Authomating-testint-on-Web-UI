@@ -1,8 +1,11 @@
 package org.example.HW_5;
 
+import com.beust.ah.A;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 
 public class Positive_tests extends Setting {
     @Test
@@ -23,9 +26,13 @@ public class Positive_tests extends Setting {
         getDriver().switchTo().parentFrame().switchTo().frame(1).switchTo().frame(0);
         WebElement webElement2 = getDriver().findElement(By.cssSelector(".x-tree-ec-icon"));
         webElement2.click();
-        WebElement webElement3 = getDriver().findElement(By.cssSelector("#extdd-13 > img.x-tree-ec-icon.x-tree-elbow-plus"));
-        webElement3.click();
-        WebElement webElement4 = getDriver().findElement(By.id("extdd-945"));
+        WebElement webElement3 = getDriver().findElement(By.id("extdd-13"));
+        Actions builder = new Actions(getDriver());
+        builder
+                .doubleClick(webElement3)
+                .build()
+                .perform();
+        WebElement webElement4 = getDriver().findElement(By.id("extdd-949"));
         webElement4.click();
         getDriver().switchTo().parentFrame().switchTo().frame(1);
         WebElement webElement5 = getDriver().findElement(By.xpath(".//div[4]/input"));
@@ -50,9 +57,13 @@ public class Positive_tests extends Setting {
         getDriver().switchTo().parentFrame().switchTo().frame(1).switchTo().frame(0);
         WebElement webElement2 = getDriver().findElement(By.cssSelector(".x-tree-ec-icon"));
         webElement2.click();
-        WebElement webElement3 = getDriver().findElement(By.cssSelector("#extdd-10 > .x-tree-ec-icon"));
-        webElement3.click();
-        WebElement webElement4 = getDriver().findElement(By.cssSelector("#extdd-864"));
+        WebElement webElement3 = getDriver().findElement(By.id("extdd-13"));
+        Actions builder = new Actions(getDriver());
+        builder
+                .doubleClick(webElement3)
+                .build()
+                .perform();
+        WebElement webElement4 = getDriver().findElement(By.id("extdd-949"));
         webElement4.click();
         getDriver().switchTo().parentFrame().switchTo().frame(1);
         WebElement webElement5 = getDriver().findElement(By.xpath(".//div[4]/input"));
@@ -63,7 +74,7 @@ public class Positive_tests extends Setting {
         webElement6.click();
         webElement6.sendKeys("Привет");
         getDriver().switchTo().parentFrame();
-        WebElement webElement7 = getDriver().findElement(By.cssSelector(".workBack:nth-child(16) #do_update_step_and_exit"));
+        WebElement webElement7 = getDriver().findElement(By.xpath("//div[5]/div/input[2]"));
         webElement7.click();
         WebElement webElement8 = getDriver().findElement(By.xpath("(//img[@alt='Удалить шаг'])[19]"));
         webElement8.click();

@@ -11,6 +11,9 @@ public class Account_param extends Abstract_page{
     @FindBy(css = ("form:nth-child(1) > .groupBtn > input"))
         private WebElement new_key_button;
 
+
+
+
     public Account_param(WebDriver driver) {
         super(driver);
     }
@@ -23,4 +26,5 @@ public class Account_param extends Abstract_page{
         new_key_button.click();
         return this;
     }
+
 }
