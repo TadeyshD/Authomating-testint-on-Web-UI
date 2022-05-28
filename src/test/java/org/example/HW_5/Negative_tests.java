@@ -51,6 +51,9 @@ public class Negative_tests {
     String s = driver.findElement(By.xpath(".//div[@class=\"user__feedback\"]")).getText();
     Assertions.assertTrue(s.equals("Пользователь не найден, пожалуйста, попробуйте еще раз"));
     }
+
+
+
     @AfterAll
     static void end_session(){
         driver.quit();

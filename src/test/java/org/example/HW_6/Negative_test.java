@@ -2,6 +2,7 @@ package org.example.HW_6;
 
 import com.beust.ah.A;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import hw_6.Add_new_user_page;
 import hw_6.Authorization_page;
 import hw_6.Forget_password_page;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -75,5 +76,25 @@ public class Negative_test {
                         .getText()
                         .equals("Пользователь не найден, пожалуйста, попробуйте еще раз")
         );
+    }
+    @Test
+    void invalid_registration(){
+        Add_new_user_page add_new_user_page = new Add_new_user_page(driver);
+        add_new_user_page
+                .add_new_user()
+                .enter_login()
+                .enter_invalid_password()
+                .repeat_password()
+                .enter_first_name()
+                .enter_last_name()
+                .enter_email()
+                .add_user_button();
+        Assertions.assertTrue(
+                driver
+                        .findElement(By.cssSelector("body > div > div:nth-child(2)"))
+                        .getText()
+                        .equals("Ваш пароль не может быть пустым!")
+        );
+
     }
 }
