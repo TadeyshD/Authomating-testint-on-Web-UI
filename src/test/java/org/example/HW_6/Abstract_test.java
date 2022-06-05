@@ -10,7 +10,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.logging.LogEntries;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Abstract_test {
@@ -38,6 +43,8 @@ public class Abstract_test {
             .switchTo()
             .frame(0);
 }
+
+
 
     @AfterEach
     void exit(){
