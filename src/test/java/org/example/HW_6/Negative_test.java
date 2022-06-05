@@ -1,15 +1,10 @@
 package org.example.HW_6;
 
-import com.beust.ah.A;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import hw_6.Add_new_user_page;
 import hw_6.Authorization_page;
 import hw_6.Forget_password_page;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -30,11 +25,21 @@ public class Negative_test {
         driver.get("https://google.com");
         driver.navigate().to("http://testlink.testbase.ru/login.php");
     }
-    @AfterAll
-    static void end_session(){
-        driver.quit();
-    }
 
+    @Test
+    void Forget_you_password_invalid(){
+        Forget_password_page forget_password_page = new Forget_password_page(driver);
+        forget_password_page
+                .lost_password()
+                .new_login()
+                .confirm();
+        Assertions.assertTrue(
+                driver
+                        .findElement(By.xpath("/html/body/div/div[2]/div"))
+                        .getText()
+                        .equals("Пользователь не найден, пожалуйста, попробуйте еще раз")
+        );
+    }
     @Test
     void Invalid_authorization_with_invalid_login(){
         Authorization_page authorization_page = new Authorization_page(driver);
@@ -63,20 +68,7 @@ public class Negative_test {
                         .equals("Попробуйте снова! Вы ввели неверное имя или пароль!")
         );
     }
-    @Test
-    void Forget_you_password_invalid(){
-        Forget_password_page forget_password_page = new Forget_password_page(driver);
-        forget_password_page
-                .lost_password()
-                .new_login()
-                .confirm();
-        Assertions.assertTrue(
-                driver
-                        .findElement(By.xpath(".//div[@class=\"user__feedback\"]"))
-                        .getText()
-                        .equals("Пользователь не найден, пожалуйста, попробуйте еще раз")
-        );
-    }
+
     @Test
     void invalid_registration(){
         Add_new_user_page add_new_user_page = new Add_new_user_page(driver);
@@ -95,6 +87,11 @@ public class Negative_test {
                         .getText()
                         .equals("Ваш пароль не может быть пустым!")
         );
+        driver.navigate().to("http://testlink.testbase.ru/login.php");
+    }
 
+    @AfterAll
+    static void end_session(){
+        driver.quit();
     }
 }

@@ -1,10 +1,9 @@
 package org.example.HW_5;
 
-import com.beust.ah.A;
+
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 public class Positive_tests extends Setting {

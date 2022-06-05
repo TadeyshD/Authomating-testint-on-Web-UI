@@ -1,11 +1,11 @@
 package org.example.HW_6;
 
-import com.beust.ah.A;
-import hw_6.Abstract_page;
+
 import hw_6.Account_param;
 import hw_6.Tests_page;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebDriver;
+
 
 public class Positive_tests extends Abstract_test {
     @Test
@@ -25,6 +25,7 @@ public class Positive_tests extends Abstract_test {
                 .frame(0);
     }
     @Test
+    @DisplayName("Test_1")
     void create_new_step_and_finish_him() throws InterruptedException {
         Tests_page tests_page = new Tests_page(getDriver());
         tests_page
