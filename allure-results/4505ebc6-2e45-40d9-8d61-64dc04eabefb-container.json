@@ -1,0 +1,1 @@
+{"uuid":"4505ebc6-2e45-40d9-8d61-64dc04eabefb","name":"Авторизация с неверным логином","children":["51ff8034-5ffa-41c0-9632-215dc5bec889"],"befores":[{"name":"initMainPage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1654512690479,"stop":1654512690814}],"afters":[],"start":1654512690474,"stop":1654512691205}

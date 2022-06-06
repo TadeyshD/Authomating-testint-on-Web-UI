@@ -1,0 +1,1 @@
+{"uuid":"aefdd3a9-4a80-46c9-98d4-9f88229e8483","name":"Регистрация с неверным паролем","children":["c3ce8921-6daa-4dbd-af7b-eab96031f2f0"],"befores":[{"name":"initMainPage","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1654514887970,"stop":1654514888115}],"afters":[],"start":1654514887968,"stop":1654514888117}

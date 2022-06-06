@@ -1,0 +1,1772 @@
+# Created at 2022-06-06T14:28:04.841
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2022-06-06T14:28:05.415
+Unexpected IOException with stream: 14:28:05.414 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 629
+Content-Type: application/json; charset=utf-8
+host: localhost:55106
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 790
+
+
+
+# Created at 2022-06-06T14:28:05.416
+Unexpected IOException with stream: 14:28:05.416 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:55106 for channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]
+
+
+# Created at 2022-06-06T14:28:05.417
+Unexpected IOException with stream: июн. 06, 2022 2:28:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+
+# Created at 2022-06-06T14:28:05.422
+Unexpected IOException with stream: 14:28:05.421 [AsyncHttpClient-1-15] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0xbdb68c8b, L:/127.0.0.1:21552 - R:localhost/127.0.0.1:21539]' for 'GET' to '/json/version'
+
+
+# Created at 2022-06-06T14:28:05.425
+Unexpected IOException with stream: 14:28:05.425 [AsyncHttpClient-1-15] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+host: localhost:21539
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+content-length: 442
+
+
+
+# Created at 2022-06-06T14:28:05.426
+Unexpected IOException with stream: 14:28:05.426 [AsyncHttpClient-1-15] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:21539 for channel [id: 0xbdb68c8b, L:/127.0.0.1:21552 - R:localhost/127.0.0.1:21539]
+
+
+# Created at 2022-06-06T14:28:05.428
+Unexpected IOException with stream: 14:28:05.428 [AsyncHttpClient-1-16] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0xc8353894, L:/127.0.0.1:21553 - R:localhost/127.0.0.1:21539]' for 'GET' to '/devtools/browser/af37d674-7bb0-42a8-8786-9f628b31ad7b'
+
+
+# Created at 2022-06-06T14:28:05.432
+Unexpected IOException with stream: 14:28:05.431 [AsyncHttpClient-1-16] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/af37d674-7bb0-42a8-8786-9f628b31ad7b HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: xsnhdXT4x/kvZVD6TSivJQ==
+sec-websocket-version: 13
+origin: http://localhost:21539
+host: localhost:21539
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: VPmcUSIGepUqWDXrFp8wAAurO5k=
+
+
+
+# Created at 2022-06-06T14:28:05.433
+Unexpected IOException with stream: июн. 06, 2022 2:28:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: a no-op implementation
+
+
+# Created at 2022-06-06T14:28:05.434
+Unexpected IOException with stream: июн. 06, 2022 2:28:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 102.
+
+
+# Created at 2022-06-06T14:28:05.435
+Unexpected IOException with stream: июн. 06, 2022 2:28:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+
+# Created at 2022-06-06T14:28:05.449
+Unexpected IOException with stream: 14:28:05.449 [Forwarding setTimeout on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]' for 'POST' to 'http://localhost:55106/session/f1d2d07bdb794037ca505b56521a7d09/timeouts'
+
+
+# Created at 2022-06-06T14:28:05.450
+Unexpected IOException with stream: 14:28:05.450 [Forwarding setTimeout on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106] for POST '/session/f1d2d07bdb794037ca505b56521a7d09/timeouts'
+
+
+# Created at 2022-06-06T14:28:05.451
+Unexpected IOException with stream: 14:28:05.451 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f1d2d07bdb794037ca505b56521a7d09/timeouts HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:55106
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:05.452
+Unexpected IOException with stream: 14:28:05.451 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:55106 for channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]
+
+
+# Created at 2022-06-06T14:28:05.457
+Unexpected IOException: 5,1,org.example.HW_7.NegativeTest,Invalid_authorization_with_invalid_password,null,null,null
+
+
+# Created at 2022-06-06T14:28:05.461
+Unexpected IOException with stream: 14:28:05.461 [Forwarding get on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]' for 'POST' to 'http://localhost:55106/session/f1d2d07bdb794037ca505b56521a7d09/url'
+
+
+# Created at 2022-06-06T14:28:05.462
+Unexpected IOException with stream: 14:28:05.462 [Forwarding get on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106] for POST '/session/f1d2d07bdb794037ca505b56521a7d09/url'
+
+
+# Created at 2022-06-06T14:28:05.536
+Unexpected IOException with stream: 14:28:05.536 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:21539 : 1
+
+
+# Created at 2022-06-06T14:28:06.635
+Unexpected IOException with stream: 14:28:06.635 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:21539 : 1
+
+
+# Created at 2022-06-06T14:28:07.736
+Unexpected IOException with stream: 14:28:07.736 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:21539 : 1
+
+
+# Created at 2022-06-06T14:28:07.847
+Unexpected IOException with stream: 14:28:07.847 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f1d2d07bdb794037ca505b56521a7d09/url HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 67
+Content-Type: application/json; charset=utf-8
+host: localhost:55106
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:07.848
+Unexpected IOException with stream: 14:28:07.848 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:55106 for channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]
+
+
+# Created at 2022-06-06T14:28:07.852
+Unexpected IOException: 7,1,org.example.HW_7.NegativeTest,Invalid_authorization_with_invalid_password,null,hw_6/Authorization_page,null,hw_6/Authorization_page,NegativeTest.Invalid_authorization_with_invalid_password:72 NoClassDefFound hw...,java.lang.NoClassDefFoundError: hw_6/Authorization_page\000A\0009at org.example.HW_7.NegativeTest.Invalid_authorization_with_invalid_password(NegativeTest.java:72)\000ACaused by: java.lang.ClassNotFoundException: hw_6.Authorization_page\000A\0009at org.example.HW_7.NegativeTest.Invalid_authorization_with_invalid_password(NegativeTest.java:72)\000A
+
+
+# Created at 2022-06-06T14:28:07.855
+Unexpected IOException: 5,1,org.example.HW_7.NegativeTest,Invalid_authorization_with_invalid_login,null,null,null
+
+
+# Created at 2022-06-06T14:28:07.857
+Unexpected IOException with stream: 14:28:07.857 [Forwarding get on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]' for 'POST' to 'http://localhost:55106/session/f1d2d07bdb794037ca505b56521a7d09/url'
+
+
+# Created at 2022-06-06T14:28:07.858
+Unexpected IOException with stream: 14:28:07.857 [Forwarding get on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106] for POST '/session/f1d2d07bdb794037ca505b56521a7d09/url'
+
+
+# Created at 2022-06-06T14:28:07.963
+Unexpected IOException with stream: 14:28:07.962 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f1d2d07bdb794037ca505b56521a7d09/url HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 67
+Content-Type: application/json; charset=utf-8
+host: localhost:55106
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:07.963
+Unexpected IOException with stream: 14:28:07.963 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:55106 for channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]
+
+
+# Created at 2022-06-06T14:28:07.967
+Unexpected IOException: 7,1,org.example.HW_7.NegativeTest,Invalid_authorization_with_invalid_login,null,hw_6/Authorization_page,null,hw_6/Authorization_page,NegativeTest.Invalid_authorization_with_invalid_login:59 NoClassDefFound hw_6/...,java.lang.NoClassDefFoundError: hw_6/Authorization_page\000A\0009at org.example.HW_7.NegativeTest.Invalid_authorization_with_invalid_login(NegativeTest.java:59)\000ACaused by: java.lang.ClassNotFoundException: hw_6.Authorization_page\000A\0009at org.example.HW_7.NegativeTest.Invalid_authorization_with_invalid_login(NegativeTest.java:59)\000A
+
+
+# Created at 2022-06-06T14:28:07.969
+Unexpected IOException: 5,1,org.example.HW_7.NegativeTest,invalid_registration,null,null,null
+
+
+# Created at 2022-06-06T14:28:07.971
+Unexpected IOException with stream: 14:28:07.970 [Forwarding get on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]' for 'POST' to 'http://localhost:55106/session/f1d2d07bdb794037ca505b56521a7d09/url'
+
+
+# Created at 2022-06-06T14:28:07.971
+Unexpected IOException with stream: 14:28:07.971 [Forwarding get on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106] for POST '/session/f1d2d07bdb794037ca505b56521a7d09/url'
+
+
+# Created at 2022-06-06T14:28:08.114
+Unexpected IOException with stream: 14:28:08.113 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f1d2d07bdb794037ca505b56521a7d09/url HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 67
+Content-Type: application/json; charset=utf-8
+host: localhost:55106
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:08.114
+Unexpected IOException with stream: 14:28:08.114 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:55106 for channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]
+
+
+# Created at 2022-06-06T14:28:08.118
+Unexpected IOException: 7,1,org.example.HW_7.NegativeTest,invalid_registration,null,hw_6/Add_new_user_page,null,hw_6/Add_new_user_page,NegativeTest.invalid_registration:85 NoClassDefFound hw_6/Add_new_user_page,java.lang.NoClassDefFoundError: hw_6/Add_new_user_page\000A\0009at org.example.HW_7.NegativeTest.invalid_registration(NegativeTest.java:85)\000ACaused by: java.lang.ClassNotFoundException: hw_6.Add_new_user_page\000A\0009at org.example.HW_7.NegativeTest.invalid_registration(NegativeTest.java:85)\000A
+
+
+# Created at 2022-06-06T14:28:08.120
+Unexpected IOException: 5,1,org.example.HW_7.NegativeTest,Forget_you_password_invalid,null,null,null
+
+
+# Created at 2022-06-06T14:28:08.122
+Unexpected IOException with stream: 14:28:08.121 [Forwarding get on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]' for 'POST' to 'http://localhost:55106/session/f1d2d07bdb794037ca505b56521a7d09/url'
+
+
+# Created at 2022-06-06T14:28:08.122
+Unexpected IOException with stream: 14:28:08.122 [Forwarding get on session f1d2d07bdb794037ca505b56521a7d09 to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106] for POST '/session/f1d2d07bdb794037ca505b56521a7d09/url'
+
+
+# Created at 2022-06-06T14:28:08.269
+Unexpected IOException with stream: 14:28:08.269 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f1d2d07bdb794037ca505b56521a7d09/url HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 67
+Content-Type: application/json; charset=utf-8
+host: localhost:55106
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:08.269
+Unexpected IOException with stream: 14:28:08.269 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:55106 for channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]
+
+
+# Created at 2022-06-06T14:28:08.273
+Unexpected IOException: 7,1,org.example.HW_7.NegativeTest,Forget_you_password_invalid,null,hw_6/Forget_password_page,null,hw_6/Forget_password_page,NegativeTest.Forget_you_password_invalid:45 NoClassDefFound hw_6/Forget_passwo...,java.lang.NoClassDefFoundError: hw_6/Forget_password_page\000A\0009at org.example.HW_7.NegativeTest.Forget_you_password_invalid(NegativeTest.java:45)\000ACaused by: java.lang.ClassNotFoundException: hw_6.Forget_password_page\000A\0009at org.example.HW_7.NegativeTest.Forget_you_password_invalid(NegativeTest.java:45)\000A
+
+
+# Created at 2022-06-06T14:28:08.274
+Unexpected IOException with stream: 14:28:08.274 [AsyncHttpClient-1-16] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - Channel Closed: [id: 0xc8353894, L:/127.0.0.1:21553 ! R:localhost/127.0.0.1:21539] with attribute NettyResponseFuture{currentRetry=5,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@7d88d513,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@388a54c6,
+	future=java.util.concurrent.CompletableFuture@4a7b7612[Completed normally],
+	uri=ws://localhost:21539/devtools/browser/af37d674-7bb0-42a8-8786-9f628b31ad7b,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1654514885432}
+
+
+# Created at 2022-06-06T14:28:08.275
+Unexpected IOException with stream: 14:28:08.274 [Driver Command Executor] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]' for 'DELETE' to 'http://localhost:55106/session/f1d2d07bdb794037ca505b56521a7d09'
+
+
+# Created at 2022-06-06T14:28:08.275
+Unexpected IOException with stream: 14:28:08.274 [AsyncHttpClient-1-16] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Closing Channel [id: 0xc8353894, L:/127.0.0.1:21553 ! R:localhost/127.0.0.1:21539] 
+
+
+# Created at 2022-06-06T14:28:08.275
+Unexpected IOException with stream: 14:28:08.275 [Driver Command Executor] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106] for DELETE '/session/f1d2d07bdb794037ca505b56521a7d09'
+
+
+# Created at 2022-06-06T14:28:08.281
+Unexpected IOException with stream: 14:28:08.280 [AsyncHttpClient-1-15] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Unexpected I/O exception on channel [id: 0xbdb68c8b, L:/127.0.0.1:21552 - R:localhost/127.0.0.1:21539]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2022-06-06T14:28:08.281
+Unexpected IOException with stream: 14:28:08.281 [AsyncHttpClient-1-15] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Closing Channel [id: 0xbdb68c8b, L:/127.0.0.1:21552 - R:localhost/127.0.0.1:21539] 
+
+
+# Created at 2022-06-06T14:28:08.282
+Unexpected IOException with stream: 14:28:08.281 [AsyncHttpClient-1-15] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Channel Closed: [id: 0xbdb68c8b, L:/127.0.0.1:21552 ! R:localhost/127.0.0.1:21539] with attribute DISCARD
+
+
+# Created at 2022-06-06T14:28:08.284
+Unexpected IOException with stream: 14:28:08.284 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/f1d2d07bdb794037ca505b56521a7d09 HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:55106
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:08.285
+Unexpected IOException with stream: 14:28:08.285 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:55106 for channel [id: 0x8c95afa0, L:/127.0.0.1:21538 - R:localhost/127.0.0.1:55106]
+
+
+# Created at 2022-06-06T14:28:08.294
+Unexpected IOException with stream: 14:28:08.293 [AsyncHttpClient-1-14] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Channel Closed: [id: 0x8c95afa0, L:/127.0.0.1:21538 ! R:localhost/127.0.0.1:55106] with attribute DISCARD
+
+
+# Created at 2022-06-06T14:28:08.316
+Unexpected IOException: 2,1,org.junit.platform.surefire.provider.JUnitPlatformProvider,org.example.HW_7.NegativeTest,null,null,null
+
+
+# Created at 2022-06-06T14:28:08.317
+Unexpected IOException: 1,1,org.junit.platform.surefire.provider.JUnitPlatformProvider,org.example.HW_7.PositiveTest,null,null,null
+
+
+# Created at 2022-06-06T14:28:08.322
+Unexpected IOException with stream: 14:28:08.322 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome=102 in cache (valid until 14:57:22 06/06/2022 MSK)
+
+
+# Created at 2022-06-06T14:28:08.323
+Unexpected IOException with stream: 14:28:08.322 [main] DEBUG io.github.bonigarcia.wdm.cache.ResolutionCache - Resolution chrome102=102.0.5005.61 in cache (valid until 13:50:14 07/06/2022 MSK)
+
+
+# Created at 2022-06-06T14:28:08.323
+Unexpected IOException with stream: 14:28:08.323 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+
+
+# Created at 2022-06-06T14:28:08.325
+Unexpected IOException with stream: 14:28:08.325 [main] DEBUG io.github.bonigarcia.wdm.WebDriverManager - Driver chromedriver 102.0.5005.61 found in cache
+
+
+# Created at 2022-06-06T14:28:08.326
+Unexpected IOException with stream: 14:28:08.326 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Tadeysh\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+
+
+# Created at 2022-06-06T14:28:08.501
+Unexpected IOException with stream: S
+
+# Created at 2022-06-06T14:28:08.502
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.502
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.502
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.502
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.503
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.503
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.503
+Unexpected IOException with stream: g
+
+# Created at 2022-06-06T14:28:08.503
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.504
+Unexpected IOException with stream: C
+
+# Created at 2022-06-06T14:28:08.504
+Unexpected IOException with stream: h
+
+# Created at 2022-06-06T14:28:08.504
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.504
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.505
+Unexpected IOException with stream: m
+
+# Created at 2022-06-06T14:28:08.505
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.505
+Unexpected IOException with stream: D
+
+# Created at 2022-06-06T14:28:08.505
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.506
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.506
+Unexpected IOException with stream: v
+
+# Created at 2022-06-06T14:28:08.506
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.506
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.507
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.507
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-06T14:28:08.507
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.507
+Unexpected IOException with stream: 2
+
+# Created at 2022-06-06T14:28:08.508
+Unexpected IOException with stream: .
+
+# Created at 2022-06-06T14:28:08.508
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.508
+Unexpected IOException with stream: .
+
+# Created at 2022-06-06T14:28:08.508
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.508
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.509
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.509
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.509
+Unexpected IOException with stream: .
+
+# Created at 2022-06-06T14:28:08.509
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-06T14:28:08.509
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-06T14:28:08.510
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.510
+Unexpected IOException with stream: (
+
+# Created at 2022-06-06T14:28:08.510
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.510
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.510
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.511
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-06T14:28:08.511
+Unexpected IOException with stream: b
+
+# Created at 2022-06-06T14:28:08.511
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.511
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.511
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.512
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.512
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.512
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.512
+Unexpected IOException with stream: 4
+
+# Created at 2022-06-06T14:28:08.512
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-06T14:28:08.513
+Unexpected IOException with stream: 8
+
+# Created at 2022-06-06T14:28:08.513
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.513
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.513
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.513
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-06T14:28:08.514
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-06T14:28:08.514
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.514
+Unexpected IOException with stream: d
+
+# Created at 2022-06-06T14:28:08.514
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-06T14:28:08.514
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-06T14:28:08.515
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.515
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-06T14:28:08.515
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.515
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.515
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.516
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-06T14:28:08.516
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.516
+Unexpected IOException with stream: f
+
+# Created at 2022-06-06T14:28:08.516
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-06T14:28:08.516
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.517
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-06T14:28:08.517
+Unexpected IOException with stream: d
+
+# Created at 2022-06-06T14:28:08.517
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-06T14:28:08.517
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.517
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.518
+Unexpected IOException with stream: d
+
+# Created at 2022-06-06T14:28:08.518
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-06T14:28:08.518
+Unexpected IOException with stream: -
+
+# Created at 2022-06-06T14:28:08.518
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.518
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.518
+Unexpected IOException with stream: f
+
+# Created at 2022-06-06T14:28:08.519
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.519
+Unexpected IOException with stream: /
+
+# Created at 2022-06-06T14:28:08.519
+Unexpected IOException with stream: b
+
+# Created at 2022-06-06T14:28:08.519
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.519
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.520
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.520
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.520
+Unexpected IOException with stream: h
+
+# Created at 2022-06-06T14:28:08.520
+Unexpected IOException with stream: -
+
+# Created at 2022-06-06T14:28:08.520
+Unexpected IOException with stream: h
+
+# Created at 2022-06-06T14:28:08.521
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.521
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.521
+Unexpected IOException with stream: d
+
+# Created at 2022-06-06T14:28:08.521
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.521
+Unexpected IOException with stream: /
+
+# Created at 2022-06-06T14:28:08.522
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.522
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.522
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-06T14:28:08.522
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.522
+Unexpected IOException with stream: @
+
+# Created at 2022-06-06T14:28:08.522
+Unexpected IOException with stream: {
+
+# Created at 2022-06-06T14:28:08.523
+Unexpected IOException with stream: #
+
+# Created at 2022-06-06T14:28:08.523
+Unexpected IOException with stream: 8
+
+# Created at 2022-06-06T14:28:08.523
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-06T14:28:08.523
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-06T14:28:08.523
+Unexpected IOException with stream: }
+
+# Created at 2022-06-06T14:28:08.524
+Unexpected IOException with stream: )
+
+# Created at 2022-06-06T14:28:08.524
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.524
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.525
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.525
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.525
+Unexpected IOException with stream: p
+
+# Created at 2022-06-06T14:28:08.525
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.525
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.526
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.526
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.526
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-06T14:28:08.526
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-06T14:28:08.527
+Unexpected IOException with stream: 8
+
+# Created at 2022-06-06T14:28:08.527
+Unexpected IOException with stream: 7
+
+# Created at 2022-06-06T14:28:08.527
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-06T14:28:08.528
+Unexpected IOException with stream: 
+
+# Created at 2022-06-06T14:28:08.528
+Unexpected IOException with stream: 
+
+
+# Created at 2022-06-06T14:28:08.528
+Unexpected IOException with stream: O
+
+# Created at 2022-06-06T14:28:08.528
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.528
+Unexpected IOException with stream: l
+
+# Created at 2022-06-06T14:28:08.529
+Unexpected IOException with stream: y
+
+# Created at 2022-06-06T14:28:08.529
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.529
+Unexpected IOException with stream: l
+
+# Created at 2022-06-06T14:28:08.529
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.529
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.529
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.530
+Unexpected IOException with stream: l
+
+# Created at 2022-06-06T14:28:08.530
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.530
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.530
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.530
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.531
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.531
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.531
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.531
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.531
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.531
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.532
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.532
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.532
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.532
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.532
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.533
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.533
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.533
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.533
+Unexpected IOException with stream: l
+
+# Created at 2022-06-06T14:28:08.533
+Unexpected IOException with stream: l
+
+# Created at 2022-06-06T14:28:08.533
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.534
+Unexpected IOException with stream: w
+
+# Created at 2022-06-06T14:28:08.534
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.534
+Unexpected IOException with stream: d
+
+# Created at 2022-06-06T14:28:08.534
+Unexpected IOException with stream: .
+
+# Created at 2022-06-06T14:28:08.535
+Unexpected IOException with stream: 
+
+# Created at 2022-06-06T14:28:08.535
+Unexpected IOException with stream: 
+
+
+# Created at 2022-06-06T14:28:08.535
+Unexpected IOException with stream: P
+
+# Created at 2022-06-06T14:28:08.535
+Unexpected IOException with stream: l
+
+# Created at 2022-06-06T14:28:08.536
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.536
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.536
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.536
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.536
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.537
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.537
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.537
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.537
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.538
+Unexpected IOException with stream: h
+
+# Created at 2022-06-06T14:28:08.538
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.538
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.538
+Unexpected IOException with stream: p
+
+# Created at 2022-06-06T14:28:08.539
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.539
+Unexpected IOException with stream: :
+
+# Created at 2022-06-06T14:28:08.539
+Unexpected IOException with stream: /
+
+# Created at 2022-06-06T14:28:08.540
+Unexpected IOException with stream: /
+
+# Created at 2022-06-06T14:28:08.540
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.540
+Unexpected IOException with stream: h
+
+# Created at 2022-06-06T14:28:08.541
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.541
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.541
+Unexpected IOException with stream: m
+
+# Created at 2022-06-06T14:28:08.541
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.542
+Unexpected IOException with stream: d
+
+# Created at 2022-06-06T14:28:08.542
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.542
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.542
+Unexpected IOException with stream: v
+
+# Created at 2022-06-06T14:28:08.543
+Unexpected IOException with stream: 14:28:08.541 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]' for 'POST' to '/session'
+
+
+# Created at 2022-06-06T14:28:08.543
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.543
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.544
+Unexpected IOException with stream: .
+
+# Created at 2022-06-06T14:28:08.544
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.544
+Unexpected IOException with stream: h
+
+# Created at 2022-06-06T14:28:08.544
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.544
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.545
+Unexpected IOException with stream: m
+
+# Created at 2022-06-06T14:28:08.545
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.545
+Unexpected IOException with stream: u
+
+# Created at 2022-06-06T14:28:08.545
+Unexpected IOException with stream: m
+
+# Created at 2022-06-06T14:28:08.547
+Unexpected IOException with stream: .
+
+# Created at 2022-06-06T14:28:08.548
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.548
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.548
+Unexpected IOException with stream: g
+
+# Created at 2022-06-06T14:28:08.548
+Unexpected IOException with stream: /
+
+# Created at 2022-06-06T14:28:08.549
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.549
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.549
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.549
+Unexpected IOException with stream: u
+
+# Created at 2022-06-06T14:28:08.549
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.550
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.550
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.550
+Unexpected IOException with stream: y
+
+# Created at 2022-06-06T14:28:08.550
+Unexpected IOException with stream: -
+
+# Created at 2022-06-06T14:28:08.550
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.550
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.550
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: d
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.552
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.553
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.553
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.553
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.554
+Unexpected IOException with stream: f
+
+# Created at 2022-06-06T14:28:08.554
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.555
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.556
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.557
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.557
+Unexpected IOException with stream: u
+
+# Created at 2022-06-06T14:28:08.558
+Unexpected IOException with stream: g
+
+# Created at 2022-06-06T14:28:08.558
+Unexpected IOException with stream: g
+
+# Created at 2022-06-06T14:28:08.559
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.560
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.560
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.560
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.560
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.561
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.561
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.561
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.563
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.563
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.563
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.564
+Unexpected IOException with stream: k
+
+# Created at 2022-06-06T14:28:08.564
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.564
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.564
+Unexpected IOException with stream: p
+
+# Created at 2022-06-06T14:28:08.565
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.565
+Unexpected IOException with stream: n
+
+# Created at 2022-06-06T14:28:08.566
+Unexpected IOException with stream: g
+
+# Created at 2022-06-06T14:28:08.566
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.567
+Unexpected IOException with stream: C
+
+# Created at 2022-06-06T14:28:08.567
+Unexpected IOException with stream: h
+
+# Created at 2022-06-06T14:28:08.567
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.567
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.568
+Unexpected IOException with stream: m
+
+# Created at 2022-06-06T14:28:08.568
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.568
+Unexpected IOException with stream: D
+
+# Created at 2022-06-06T14:28:08.568
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.569
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.569
+Unexpected IOException with stream: v
+
+# Created at 2022-06-06T14:28:08.569
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.569
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.569
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.570
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.570
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.570
+Unexpected IOException with stream: f
+
+# Created at 2022-06-06T14:28:08.571
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.571
+Unexpected IOException with stream: .
+
+# Created at 2022-06-06T14:28:08.571
+Unexpected IOException with stream: 
+
+# Created at 2022-06-06T14:28:08.571
+Unexpected IOException with stream: 
+
+
+# Created at 2022-06-06T14:28:08.572
+Unexpected IOException with stream: C
+
+# Created at 2022-06-06T14:28:08.572
+Unexpected IOException with stream: h
+
+# Created at 2022-06-06T14:28:08.572
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.572
+Unexpected IOException with stream: o
+
+# Created at 2022-06-06T14:28:08.573
+Unexpected IOException with stream: m
+
+# Created at 2022-06-06T14:28:08.573
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.573
+Unexpected IOException with stream: D
+
+# Created at 2022-06-06T14:28:08.573
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.574
+Unexpected IOException with stream: i
+
+# Created at 2022-06-06T14:28:08.575
+Unexpected IOException with stream: v
+
+# Created at 2022-06-06T14:28:08.575
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.575
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.577
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.577
+Unexpected IOException with stream: w
+
+# Created at 2022-06-06T14:28:08.577
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.578
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.578
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.581
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.581
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.581
+Unexpected IOException with stream: a
+
+# Created at 2022-06-06T14:28:08.583
+Unexpected IOException with stream: r
+
+# Created at 2022-06-06T14:28:08.584
+Unexpected IOException with stream: t
+
+# Created at 2022-06-06T14:28:08.585
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.585
+Unexpected IOException with stream: d
+
+# Created at 2022-06-06T14:28:08.586
+Unexpected IOException with stream:  
+
+# Created at 2022-06-06T14:28:08.586
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.590
+Unexpected IOException with stream: u
+
+# Created at 2022-06-06T14:28:08.591
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.596
+Unexpected IOException with stream: c
+
+# Created at 2022-06-06T14:28:08.597
+Unexpected IOException with stream: e
+
+# Created at 2022-06-06T14:28:08.597
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.600
+Unexpected IOException with stream: s
+
+# Created at 2022-06-06T14:28:08.600
+Unexpected IOException with stream: f
+
+# Created at 2022-06-06T14:28:08.601
+Unexpected IOException with stream: u
+
+# Created at 2022-06-06T14:28:08.601
+Unexpected IOException with stream: l
+
+# Created at 2022-06-06T14:28:08.602
+Unexpected IOException with stream: l
+
+# Created at 2022-06-06T14:28:08.603
+Unexpected IOException with stream: y
+
+# Created at 2022-06-06T14:28:08.603
+Unexpected IOException with stream: .
+
+# Created at 2022-06-06T14:28:08.603
+Unexpected IOException with stream: 
+
+# Created at 2022-06-06T14:28:08.604
+Unexpected IOException with stream: 
+
+
+# Created at 2022-06-06T14:28:08.844
+Unexpected IOException with stream: 14:28:08.844 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:21539 : 1
+
+
+# Created at 2022-06-06T14:28:08.845
+Unexpected IOException with stream: 14:28:08.844 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:55106 : 1
+
+
+# Created at 2022-06-06T14:28:08.845
+Unexpected IOException with stream: 14:28:08.845 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Adding Candidate expired Channel [id: 0xbdb68c8b, L:/127.0.0.1:21552 ! R:localhost/127.0.0.1:21539] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+
+
+# Created at 2022-06-06T14:28:08.845
+Unexpected IOException with stream: 14:28:08.845 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closing Idle Channel [id: 0xbdb68c8b, L:/127.0.0.1:21552 ! R:localhost/127.0.0.1:21539]
+
+
+# Created at 2022-06-06T14:28:08.846
+Unexpected IOException with stream: 14:28:08.846 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Adding Candidate expired Channel [id: 0x8c95afa0, L:/127.0.0.1:21538 ! R:localhost/127.0.0.1:55106] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+
+
+# Created at 2022-06-06T14:28:08.846
+Unexpected IOException with stream: 14:28:08.846 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closing Idle Channel [id: 0x8c95afa0, L:/127.0.0.1:21538 ! R:localhost/127.0.0.1:55106]
+
+
+# Created at 2022-06-06T14:28:08.846
+Unexpected IOException with stream: 14:28:08.846 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closed 2 connections out of 2 in 1 ms
+
+
+# Created at 2022-06-06T14:28:09.042
+Unexpected IOException with stream: 14:28:09.041 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 633
+Content-Type: application/json; charset=utf-8
+host: localhost:51871
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 791
+
+
+
+# Created at 2022-06-06T14:28:09.042
+Unexpected IOException with stream: 14:28:09.042 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:51871 for channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]
+
+
+# Created at 2022-06-06T14:28:09.043
+Unexpected IOException with stream: июн. 06, 2022 2:28:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+
+
+# Created at 2022-06-06T14:28:09.047
+Unexpected IOException with stream: 14:28:09.046 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0xb61e8bce, L:/127.0.0.1:21572 - R:localhost/127.0.0.1:21567]' for 'GET' to '/json/version'
+
+
+# Created at 2022-06-06T14:28:09.048
+Unexpected IOException with stream: 14:28:09.048 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /json/version HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+host: localhost:21567
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=UTF-8
+content-length: 442
+
+
+
+# Created at 2022-06-06T14:28:09.049
+Unexpected IOException with stream: 14:28:09.049 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:21567 for channel [id: 0xb61e8bce, L:/127.0.0.1:21572 - R:localhost/127.0.0.1:21567]
+
+
+# Created at 2022-06-06T14:28:09.051
+Unexpected IOException with stream: 14:28:09.050 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener - Using new Channel '[id: 0xc0b2a7dc, L:/127.0.0.1:21573 - R:localhost/127.0.0.1:21567]' for 'GET' to '/devtools/browser/5cd9d459-0eab-463f-965e-89d115bb9bec'
+
+
+# Created at 2022-06-06T14:28:09.052
+Unexpected IOException with stream: 14:28:09.051 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /devtools/browser/5cd9d459-0eab-463f-965e-89d115bb9bec HTTP/1.1
+upgrade: websocket
+connection: upgrade
+sec-websocket-key: z1TvQirF3i3hppat3D3e1A==
+sec-websocket-version: 13
+origin: http://localhost:21567
+host: localhost:21567
+accept: */*
+user-agent: AHC/2.1
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 101 WebSocket Protocol Handshake
+Upgrade: WebSocket
+Connection: Upgrade
+Sec-WebSocket-Accept: efsM7bv7M35+FjZ0ctuVgWSawEI=
+
+
+
+# Created at 2022-06-06T14:28:09.053
+Unexpected IOException with stream: июн. 06, 2022 2:28:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 102, so returning the closest version found: a no-op implementation
+
+
+# Created at 2022-06-06T14:28:09.054
+Unexpected IOException with stream: июн. 06, 2022 2:28:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+INFO: Unable to find CDP implementation matching 102.
+
+
+# Created at 2022-06-06T14:28:09.055
+Unexpected IOException with stream: июн. 06, 2022 2:28:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.0.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+
+
+# Created at 2022-06-06T14:28:09.056
+Unexpected IOException with stream: 14:28:09.056 [Forwarding setTimeout on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]' for 'POST' to 'http://localhost:51871/session/aba911bf5f7f4773ab1ebfce9bf3354f/timeouts'
+
+
+# Created at 2022-06-06T14:28:09.057
+Unexpected IOException with stream: 14:28:09.056 [Forwarding setTimeout on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871] for POST '/session/aba911bf5f7f4773ab1ebfce9bf3354f/timeouts'
+
+
+# Created at 2022-06-06T14:28:09.058
+Unexpected IOException with stream: 14:28:09.058 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/aba911bf5f7f4773ab1ebfce9bf3354f/timeouts HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:51871
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:09.058
+Unexpected IOException with stream: 14:28:09.058 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:51871 for channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]
+
+
+# Created at 2022-06-06T14:28:09.062
+Unexpected IOException: 5,1,org.example.HW_7.PositiveTest,create_new_step_and_finish_him,null,null,null
+
+
+# Created at 2022-06-06T14:28:09.063
+Unexpected IOException with stream: 14:28:09.063 [Forwarding get on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]' for 'POST' to 'http://localhost:51871/session/aba911bf5f7f4773ab1ebfce9bf3354f/url'
+
+
+# Created at 2022-06-06T14:28:09.064
+Unexpected IOException with stream: 14:28:09.064 [Forwarding get on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871] for POST '/session/aba911bf5f7f4773ab1ebfce9bf3354f/url'
+
+
+# Created at 2022-06-06T14:28:09.465
+Unexpected IOException with stream: 14:28:09.464 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/aba911bf5f7f4773ab1ebfce9bf3354f/url HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 67
+Content-Type: application/json; charset=utf-8
+host: localhost:51871
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:09.465
+Unexpected IOException with stream: 14:28:09.465 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:51871 for channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]
+
+
+# Created at 2022-06-06T14:28:09.469
+Unexpected IOException with stream: 14:28:09.468 [Forwarding getLog on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]' for 'POST' to 'http://localhost:51871/session/aba911bf5f7f4773ab1ebfce9bf3354f/se/log'
+
+
+# Created at 2022-06-06T14:28:09.469
+Unexpected IOException with stream: 14:28:09.469 [Forwarding getLog on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871] for POST '/session/aba911bf5f7f4773ab1ebfce9bf3354f/se/log'
+
+
+# Created at 2022-06-06T14:28:09.470
+Unexpected IOException with stream: 14:28:09.470 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/aba911bf5f7f4773ab1ebfce9bf3354f/se/log HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:51871
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 12
+
+
+
+# Created at 2022-06-06T14:28:09.471
+Unexpected IOException with stream: 14:28:09.471 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:51871 for channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]
+
+
+# Created at 2022-06-06T14:28:09.517
+Unexpected IOException: 7,1,org.example.HW_7.PositiveTest,create_new_step_and_finish_him,null,hw_6/Authorization_page,null,hw_6/Authorization_page,PositiveTest>AbstractTest.authorization:49 \00BB NoClassDefFound hw_6/Authorizatio...,java.lang.NoClassDefFoundError: hw_6/Authorization_page\000ACaused by: java.lang.ClassNotFoundException: hw_6.Authorization_page\000A
+
+
+# Created at 2022-06-06T14:28:09.519
+Unexpected IOException: 5,1,org.example.HW_7.PositiveTest,create_new_API_key,null,null,null
+
+
+# Created at 2022-06-06T14:28:09.520
+Unexpected IOException with stream: 14:28:09.520 [Forwarding get on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]' for 'POST' to 'http://localhost:51871/session/aba911bf5f7f4773ab1ebfce9bf3354f/url'
+
+
+# Created at 2022-06-06T14:28:09.521
+Unexpected IOException with stream: 14:28:09.520 [Forwarding get on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871] for POST '/session/aba911bf5f7f4773ab1ebfce9bf3354f/url'
+
+
+# Created at 2022-06-06T14:28:09.663
+Unexpected IOException with stream: 14:28:09.663 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/aba911bf5f7f4773ab1ebfce9bf3354f/url HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 67
+Content-Type: application/json; charset=utf-8
+host: localhost:51871
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:09.664
+Unexpected IOException with stream: 14:28:09.664 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:51871 for channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]
+
+
+# Created at 2022-06-06T14:28:09.667
+Unexpected IOException with stream: 14:28:09.667 [Forwarding getLog on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]' for 'POST' to 'http://localhost:51871/session/aba911bf5f7f4773ab1ebfce9bf3354f/se/log'
+
+
+# Created at 2022-06-06T14:28:09.667
+Unexpected IOException with stream: 14:28:09.667 [Forwarding getLog on session aba911bf5f7f4773ab1ebfce9bf3354f to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871] for POST '/session/aba911bf5f7f4773ab1ebfce9bf3354f/se/log'
+
+
+# Created at 2022-06-06T14:28:09.669
+Unexpected IOException with stream: 14:28:09.668 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/aba911bf5f7f4773ab1ebfce9bf3354f/se/log HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:51871
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 12
+
+
+
+# Created at 2022-06-06T14:28:09.669
+Unexpected IOException with stream: 14:28:09.669 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:51871 for channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]
+
+
+# Created at 2022-06-06T14:28:09.686
+Unexpected IOException: 7,1,org.example.HW_7.PositiveTest,create_new_API_key,null,hw_6/Authorization_page,null,hw_6/Authorization_page,PositiveTest>AbstractTest.authorization:49 \00BB NoClassDefFound hw_6/Authorizatio...,java.lang.NoClassDefFoundError: hw_6/Authorization_page\000ACaused by: java.lang.ClassNotFoundException: hw_6.Authorization_page\000A
+
+
+# Created at 2022-06-06T14:28:09.688
+Unexpected IOException with stream: 14:28:09.688 [Driver Command Executor] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using pooled Channel '[id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]' for 'DELETE' to 'http://localhost:51871/session/aba911bf5f7f4773ab1ebfce9bf3354f'
+
+
+# Created at 2022-06-06T14:28:09.688
+Unexpected IOException with stream: 14:28:09.688 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.handler.WebSocketHandler - Channel Closed: [id: 0xc0b2a7dc, L:/127.0.0.1:21573 ! R:localhost/127.0.0.1:21567] with attribute NettyResponseFuture{currentRetry=5,
+	isDone=1,
+	isCancelled=0,
+	asyncHandler=org.asynchttpclient.ws.WebSocketUpgradeHandler@1f99e0c3,
+	nettyRequest=org.asynchttpclient.netty.request.NettyRequest@4531419f,
+	future=java.util.concurrent.CompletableFuture@3f839a03[Completed normally],
+	uri=ws://localhost:21567/devtools/browser/5cd9d459-0eab-463f-965e-89d115bb9bec,
+	keepAlive=true,
+	redirectCount=0,
+	timeoutsHolder=null,
+	inAuth=0,
+	touch=1654514889052}
+
+
+# Created at 2022-06-06T14:28:09.689
+Unexpected IOException with stream: 14:28:09.688 [Driver Command Executor] DEBUG org.asynchttpclient.netty.request.NettyRequestSender - Using open Channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871] for DELETE '/session/aba911bf5f7f4773ab1ebfce9bf3354f'
+
+
+# Created at 2022-06-06T14:28:09.689
+Unexpected IOException with stream: 14:28:09.688 [AsyncHttpClient-1-3] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Closing Channel [id: 0xc0b2a7dc, L:/127.0.0.1:21573 ! R:localhost/127.0.0.1:21567] 
+
+
+# Created at 2022-06-06T14:28:09.695
+Unexpected IOException with stream: 14:28:09.694 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Unexpected I/O exception on channel [id: 0xb61e8bce, L:/127.0.0.1:21572 - R:localhost/127.0.0.1:21567]
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:719)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:655)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:581)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:986)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2022-06-06T14:28:09.695
+Unexpected IOException with stream: 14:28:09.695 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Closing Channel [id: 0xb61e8bce, L:/127.0.0.1:21572 - R:localhost/127.0.0.1:21567] 
+
+
+# Created at 2022-06-06T14:28:09.696
+Unexpected IOException with stream: 14:28:09.695 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Channel Closed: [id: 0xb61e8bce, L:/127.0.0.1:21572 ! R:localhost/127.0.0.1:21567] with attribute DISCARD
+
+
+# Created at 2022-06-06T14:28:09.699
+Unexpected IOException with stream: 14:28:09.699 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.handler.HttpHandler - 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/aba911bf5f7f4773ab1ebfce9bf3354f HTTP/1.1
+User-Agent: selenium/4.0.0 (java windows)
+Content-Type: application/json; charset=utf-8
+host: localhost:51871
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+cache-control: no-cache
+content-length: 14
+
+
+
+# Created at 2022-06-06T14:28:09.700
+Unexpected IOException with stream: 14:28:09.700 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.channel.ChannelManager - Adding key: http://localhost:51871 for channel [id: 0x4e4dec53, L:/127.0.0.1:21566 - R:localhost/127.0.0.1:51871]
+
+
+# Created at 2022-06-06T14:28:09.708
+Unexpected IOException with stream: 14:28:09.708 [AsyncHttpClient-1-17] DEBUG org.asynchttpclient.netty.handler.HttpHandler - Channel Closed: [id: 0x4e4dec53, L:/127.0.0.1:21566 ! R:localhost/127.0.0.1:51871] with attribute DISCARD
+
+
+# Created at 2022-06-06T14:28:09.735
+Unexpected IOException: 2,1,org.junit.platform.surefire.provider.JUnitPlatformProvider,org.example.HW_7.PositiveTest,null,null,null
+
+
+# Created at 2022-06-06T14:28:09.937
+Unexpected IOException with stream: 14:28:09.937 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:51871 : 1
+
+
+# Created at 2022-06-06T14:28:09.937
+Unexpected IOException with stream: 14:28:09.937 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Entry count for : http://localhost:21567 : 1
+
+
+# Created at 2022-06-06T14:28:09.938
+Unexpected IOException with stream: 14:28:09.938 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Adding Candidate expired Channel [id: 0x4e4dec53, L:/127.0.0.1:21566 ! R:localhost/127.0.0.1:51871] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+
+
+# Created at 2022-06-06T14:28:09.938
+Unexpected IOException with stream: 14:28:09.938 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closing Idle Channel [id: 0x4e4dec53, L:/127.0.0.1:21566 ! R:localhost/127.0.0.1:51871]
+
+
+# Created at 2022-06-06T14:28:09.939
+Unexpected IOException with stream: 14:28:09.939 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Adding Candidate expired Channel [id: 0xb61e8bce, L:/127.0.0.1:21572 ! R:localhost/127.0.0.1:21567] isIdleTimeoutExpired=false isRemotelyClosed=true isTtlExpired=false
+
+
+# Created at 2022-06-06T14:28:09.939
+Unexpected IOException with stream: 14:28:09.939 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closing Idle Channel [id: 0xb61e8bce, L:/127.0.0.1:21572 ! R:localhost/127.0.0.1:21567]
+
+
+# Created at 2022-06-06T14:28:09.939
+Unexpected IOException with stream: 14:28:09.939 [AsyncHttpClient-1-1] DEBUG org.asynchttpclient.netty.channel.DefaultChannelPool - Closed 2 connections out of 2 in 1 ms
+
+

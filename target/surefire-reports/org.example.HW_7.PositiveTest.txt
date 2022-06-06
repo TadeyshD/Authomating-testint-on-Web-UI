@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: org.example.HW_7.PositiveTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 35.042 s <<< FAILURE! - in org.example.HW_7.PositiveTest
+create_new_step_and_finish_him  Time elapsed: 23.656 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":".//div[4]/input"}
+  (Session info: headless chrome=102.0.5005.63)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-44QEDC4', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e9252be6a9084ad4a091251f2e4141f, findElement {using=xpath, value=.//div[4]/input}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Tadeysh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:21829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:21829/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 10000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e9252be6a9084ad4a091251f2e4141f
+	at org.example.HW_7.PositiveTest.create_new_step_and_finish_him(PositiveTest.java:63)
+
+create_new_API_key  Time elapsed: 10.601 s  <<< ERROR!
+org.openqa.selenium.NoSuchFrameException: 
+no such frame
+  (Session info: headless chrome=102.0.5005.63)
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-44QEDC4', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4e9252be6a9084ad4a091251f2e4141f, switchToFrame {id=0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\Tadeysh\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:21829}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:21829/devtoo..., se:cdpVersion: 102.0.5005.63, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 10000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4e9252be6a9084ad4a091251f2e4141f
+

@@ -15,7 +15,7 @@ public class Tests_page extends Abstract_page {
     @FindBy(id = ("extdd-13"))
     private WebElement chose_test;
 
-    @FindBy(id = ("extdd-1003"))
+    @FindBy(xpath = ("//*[@id=\"extdd-1006\"]"))
     private WebElement open_test;
 
     @FindBy(xpath = (".//div[4]/input"))
