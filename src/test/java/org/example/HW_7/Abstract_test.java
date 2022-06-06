@@ -14,14 +14,14 @@ import java.time.Duration;
 import java.util.List;
 
 public class Abstract_test {
-    static EventFiringWebDriver eventDriver;
+    static
+    EventFiringWebDriver eventDriver;
 
     @BeforeAll
     public static void setDriver(){
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito");
-       // options.addArguments("--headless");
         options.addArguments("start-maximized");
         options.setPageLoadTimeout(Duration.ofSeconds(10));
 

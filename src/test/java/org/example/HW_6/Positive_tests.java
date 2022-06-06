@@ -25,7 +25,6 @@ public class Positive_tests extends Abstract_test {
                 .frame(0);
     }
     @Test
-    @DisplayName("Test_1")
     void create_new_step_and_finish_him() throws InterruptedException {
         Tests_page tests_page = new Tests_page(getDriver());
         tests_page
